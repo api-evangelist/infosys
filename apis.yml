@@ -1,0 +1,79 @@
+aid: infosys
+name: Infosys
+description: >-
+  Infosys is a global IT services, consulting, and outsourcing company
+  headquartered in Bengaluru, India, providing digital transformation,
+  cloud, AI, and business process services. Through its Finacle banking
+  software product and Banking API Platform, Infosys exposes open banking
+  APIs for deposits, loans, payments, trade finance, and data privacy,
+  along with a configurable developer portal, API composer, and consent
+  management. A public Finacle Open Bank Project sandbox is also
+  available for developers to explore banking APIs.
+type: Index
+image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+tags:
+  - IT Services
+  - Consulting
+  - Banking
+  - Open Banking
+  - Finacle
+  - Digital Transformation
+  - Cloud
+url: >-
+  https://raw.githubusercontent.com/api-evangelist/infosys/refs/heads/main/apis.yml
+created: '2026-05-11'
+modified: '2026-05-11'
+specificationVersion: '0.19'
+apis:
+  - aid: infosys:finacle-obp-sandbox
+    name: Infosys Finacle Open Bank Project Sandbox
+    description: >-
+      Public Open Bank Project sandbox instance hosted by Infosys Finacle
+      that exposes standard OBP REST APIs for accounts, transactions,
+      customers, and consents. Useful for developers exploring Finacle
+      banking integrations through the Open Bank Project API explorer.
+    humanURL: https://infosys-finacle.openbankproject.com
+    baseURL: https://infosys-finacle.openbankproject.com
+    tags:
+      - Open Banking
+      - Banking
+      - Sandbox
+      - Finacle
+    properties:
+      - type: Documentation
+        url: https://infosys-finacle.openbankproject.com
+      - type: Product Page
+        url: https://www.finacle.com/solution/api-connect/
+  - aid: infosys:banking-api-platform
+    name: Infosys Banking API Platform
+    description: >-
+      Banking API Platform from Infosys delivering open banking APIs
+      across deposits, loans, payments, trade finance, and data privacy,
+      bundled with API management, developer portal, API composer, and
+      consent management capabilities.
+    humanURL: https://www.infosys.com/industries/financial-services/industry-offerings/banking-api-platform.html
+    baseURL: https://www.infosys.com
+    tags:
+      - Banking
+      - Open Banking
+      - API Management
+      - Payments
+      - Loans
+    properties:
+      - type: Product Page
+        url: https://www.infosys.com/industries/financial-services/industry-offerings/banking-api-platform.html
+      - type: Finacle API Connect
+        url: https://www.edgeverve.com/finacle/solutions/finacle-api-connect/
+
+common:
+  - type: Website
+    url: https://www.infosys.com
+  - type: Documentation
+    url: https://www.finacle.com/solution/api-connect/
+  - type: Finacle Product
+    url: https://www.finacle.com
+  - type: Open Bank Project Sandbox
+    url: https://infosys-finacle.openbankproject.com
+maintainers:
+  - FN: Kin Lane
+    email: kin@apievangelist.com
