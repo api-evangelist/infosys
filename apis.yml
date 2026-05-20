@@ -66,6 +66,10 @@ apis:
         url: https://www.edgeverve.com/finacle/solutions/finacle-api-connect/
 
 common:
+  - type: GitHubOrganization
+    url: https://github.com/infosys
+  - type: LinkedIn
+    url: https://www.linkedin.com/company/infosys
   - type: Website
     url: https://www.infosys.com
   - type: Documentation
