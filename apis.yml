@@ -66,6 +66,8 @@ apis:
         url: https://www.edgeverve.com/finacle/solutions/finacle-api-connect/
 
 common:
+  - type: DomainSecurity
+    url: security/infosys-domain-security.yml
   - type: GitHubOrganization
     url: https://github.com/infosys
   - type: LinkedIn
