@@ -74,7 +74,6 @@ apis:
       bundled with API management, developer portal, API composer, and
       consent management capabilities.
     humanURL: https://www.infosys.com/industries/financial-services/industry-offerings/banking-api-platform.html
-    baseURL: https://www.infosys.com
     tags:
       - Banking
       - Open Banking
