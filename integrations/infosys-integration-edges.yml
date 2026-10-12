@@ -1,5 +1,5 @@
 generated: '2026-10-12'
-method: none
+method: searched
 source:
 - https://zapier.com/apps/infosys/integrations
 - https://n8n.io/integrations/infosys/
@@ -9,8 +9,31 @@ checked:
 - https://composio.dev/toolkits/infosys
 - https://monid.ai/tools/infosys
 - https://n8n.io/integrations/infosys/
+- https://raw.githubusercontent.com/camaraproject/camara-landscape/main/landscape.yml
 - https://zapier.com/apps/infosys/integrations
 summary: null
 marketplace_apps: []
-edges: []
+edges:
+- partner_name: CAMARA
+  partner: camara-project
+  type: contract
+  channel: network-directory
+  relationship: standard-participant
+  direction: partner-built
+  evidence: https://raw.githubusercontent.com/camaraproject/camara-landscape/main/landscape.yml
+  contract_reference:
+    register: CAMARA landscape (Linux Foundation CAMARA project)
+    spec_file: null
+    role: api-maintainer
+    tier: participating-organization
+    landscape_roles:
+    - Network Capability Solution Providers
+    registered_name: Infosys
+    matched_domain: infosys.com
+    api_families:
+    - InHomeDeviceManagement
+    - MultiPointVPN
+    api_families_basis: MAINTAINERS.MD (maintains, not implements)
+    detected_by: sweep-telco-network-apis.py
+    detected: '2026-10-12'
 templates: []
