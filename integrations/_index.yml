@@ -38,7 +38,7 @@
   channel: distribution
   evidence: https://aws.amazon.com/marketplace/seller-profile?id=b5861500-168b-4fed-9170-102ed06a9641
   source: edge
-  relationship: platform-app
+  relationship: distribution-channel
   status: not-a-workflow
   arazzo: null
 - slug: infosys-microsoft-azure-marketplace
@@ -50,6 +50,6 @@
   channel: distribution
   evidence: https://azuremarketplace.microsoft.com/en-us/marketplace/apps?search=Infosys%20Ltd
   source: edge
-  relationship: platform-app
+  relationship: distribution-channel
   status: not-a-workflow
   arazzo: null
