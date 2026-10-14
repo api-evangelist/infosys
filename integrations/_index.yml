@@ -53,3 +53,16 @@
   relationship: distribution-channel
   status: not-a-workflow
   arazzo: null
+- slug: infosys-ukg-own
+  label: UKG (own)
+  partner: ukg
+  partner_name: UKG (own)
+  category: Languages Supported
+  type: marketplace
+  marketplace: own
+  channel: partner-built
+  evidence: https://marketplace.ukg.com/apps/321324/infosys-limited
+  source: edge
+  relationship: platform-app
+  status: not-a-workflow
+  arazzo: null

@@ -13,6 +13,7 @@ checked:
 - https://n8n.io/integrations/infosys/
 - https://raw.githubusercontent.com/camaraproject/camara-landscape/main/landscape.yml
 - https://zapier.com/apps/infosys/integrations
+- ukg/integrations/ukg-integration-edges.yml
 summary: null
 marketplace_apps: []
 edges:
@@ -88,4 +89,21 @@ edges:
   seller_name: Infosys Live Operations
   detected_by: sweep-cloud-marketplaces.py
   detected: '2026-10-13'
+- partner_name: UKG (own)
+  partner: ukg
+  partner_match: mirror
+  mirror_match: domain
+  type: marketplace
+  relationship: platform-app
+  direction: third-party
+  channel: partner-built
+  marketplace: own
+  evidence: https://marketplace.ukg.com/apps/321324/infosys-limited
+  mirror_of: ukg/integrations/ukg-integration-edges.yml
+  apps:
+  - Infosys Limited
+  listing_count: 1
+  detected: '2026-10-14'
+  detected_by: mirror-platform-listings.py
+  category: Languages Supported
 templates: []
