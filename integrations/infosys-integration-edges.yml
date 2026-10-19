@@ -6,6 +6,9 @@ source:
 - https://composio.dev/toolkits/infosys
 - https://monid.ai/tools/infosys
 checked:
+- https://api.appexchange.salesforce.com/recommendations/v3/listings?type=consultants&pageSize=50&page=0
+- https://api.finder.partners.aws.a2z.com/search?locale=en&size=20&from=0
+- https://app.hubspot.com/api/chirp-frontend-external/v1/gateway/com.hubspot.marketplace.personalization.rpc.PersonalizationPublicRpc/search?hs_static_app=marketplace-storefront-public-ui&hs_static_app_version=1.13519
 - https://aws.amazon.com/marketplace/
 - https://azuremarketplace.microsoft.com/
 - https://composio.dev/toolkits/infosys
@@ -18,6 +21,8 @@ checked:
 - https://raw.githubusercontent.com/18F/fedramp-data/4b73d9247fd6360759960e4690e3ce4ca858e0fa/data/data.json
 - https://raw.githubusercontent.com/camaraproject/camara-landscape/main/landscape.yml
 - https://www.applytosupply.digitalmarketplace.service.gov.uk/g-cloud-15/suppliers
+- https://www.databricks.com/en-partners-assets/data/partner/all/en.json
+- https://www.snowflake.com/content/snowflake-site/global/en/why-snowflake/partners/all-partners/_jcr_content/root/responsivegrid/container/container/filterable_resources.filter.json?offset=0
 - https://zapier.com/apps/infosys/integrations
 - ukg/integrations/ukg-integration-edges.yml
 summary: null
@@ -196,4 +201,267 @@ edges:
     detected: '2026-10-15'
   detected_by: sweep-gov-cloud.py
   first_seen: '2026-10-15'
+- partner_name: AWS Partner Network (services)
+  partner: amazon-web-services
+  partner_match: register
+  type: register
+  channel: standard-directory
+  relationship: standard-participant
+  direction: partner-built
+  evidence: https://partners.amazonaws.com/partners/001E000000UfakyIAB
+  category: Services partner
+  contract_reference:
+    register: AWS Partner Solutions Finder (api.finder.partners.aws.a2z.com/search)
+    spec_file: null
+    standard: AWS Partner Network (services path)
+    role: aws-services-partner
+    registered_name: Infosys Ltd
+    register_id: 001E000000UfakyIAB
+    partner_tier: Premier
+    matched_domain: infosys.com
+    matched_by: domain
+    identity_source: the register's own website / profile URL for the firm (no lookup)
+    signal_note: listing = participation; certified_products = one entry per designation the program awards the
+      FIRM (lapsed flagged); partner_tier and context are never counted (breadth is not credit)
+    detected_by: sweep-professional-services.py
+    detected: '2026-10-19'
+    partner_paths:
+    - path_name: Services Path
+      path_tier: Premier
+      path_stage: Differentiated
+    - path_name: Software Path
+      path_tier: null
+      path_stage: Differentiated
+    context:
+      service_deliveries: 17
+      professional_service_types:
+      - Assessment / Jumpstart Pkg
+      - Cloud Migration Services
+      - Custom Application Development
+      - Digital Marketing
+      - Managed Service Provider
+      - Strategic / IT Consulting
+      - Systems Integration
+      - Other
+      programs:
+      - AWS Managed Service Provider
+      - Authorized Commercial Reseller
+      - AWS Solution Provider Program
+      - AWS Public Sector Solution Provider
+      - ISV Accelerate
+      - China Solution Provider
+      - AWS Well-Architected Partner Program
+      hq_country: India
+    certified_products:
+    - product: AI Services Competency
+      type: AWS Competency
+      lapsed: false
+    - product: Advertising and Marketing Technology  Services Competency
+      type: AWS Competency
+      lapsed: false
+    - product: Amazon Connect Customer
+      type: AWS Competency
+      lapsed: false
+    - product: Automotive Services Competency
+      type: AWS Competency
+      lapsed: false
+    - product: Cloud Operations Services Competency
+      type: AWS Competency
+      lapsed: false
+    - product: Consumer Goods Services Competency
+      type: AWS Competency
+      lapsed: false
+    - product: Data Services Competency
+      type: AWS Competency
+      lapsed: false
+    - product: DevOps Consulting Competency
+      type: AWS Competency
+      lapsed: false
+    - product: Financial Services Consulting Competency
+      type: AWS Competency
+      lapsed: false
+    - product: Life Sciences Consulting Competency
+      type: AWS Competency
+      lapsed: false
+    - product: MSSP Services Competency
+      type: AWS Competency
+      lapsed: false
+    - product: Mainframe Modernization Consulting Competency
+      type: AWS Competency
+      lapsed: false
+    - product: Manufacturing and Industrial Services Competency
+      type: AWS Competency
+      lapsed: false
+    - product: Microsoft Workloads Consulting Competency
+      type: AWS Competency
+      lapsed: false
+    - product: Migration and Modernization Consulting Competency
+      type: AWS Competency
+      lapsed: false
+    - product: Oracle Consulting Competency
+      type: AWS Competency
+      lapsed: false
+    - product: Retail Consulting Competency
+      type: AWS Competency
+      lapsed: false
+    - product: SAP Consulting Competency
+      type: AWS Competency
+      lapsed: false
+    - product: Security Consulting Competency
+      type: AWS Competency
+      lapsed: false
+    - product: Supply Chain Services Competency
+      type: AWS Competency
+      lapsed: false
+    - product: Telecom Services Competency
+      type: AWS Competency
+      lapsed: false
+    - product: Travel and Hospitality Consulting Competency
+      type: AWS Competency
+      lapsed: false
+    - product: AWS Managed Service Provider (MSP)
+      type: AWS program validation
+      lapsed: false
+  detected_by: sweep-professional-services.py
+  first_seen: '2026-10-19'
+- partner_name: Salesforce Consulting Partner Program
+  partner: salesforce
+  partner_match: register
+  type: register
+  channel: standard-directory
+  relationship: standard-participant
+  direction: partner-built
+  evidence: https://appexchange.salesforce.com/appxListingDetail?listingId=a0N30000001ry7oEAA
+  category: Services partner
+  contract_reference:
+    register: Salesforce AppExchange consultants (recommendations/v3 listings type=consultants)
+    spec_file: null
+    standard: Salesforce consulting partner (AppExchange)
+    role: salesforce-consulting-partner
+    registered_name: Infosys Limited
+    register_id: a0N30000001ry7oEAA
+    partner_tier: Summit
+    matched_domain: infosys.com
+    matched_by: domain
+    identity_source: the register's own website / profile URL for the firm (no lookup)
+    signal_note: listing = participation; certified_products = one entry per designation the program awards the
+      FIRM (lapsed flagged); partner_tier and context are never counted (breadth is not credit)
+    detected_by: sweep-professional-services.py
+    detected: '2026-10-19'
+    certified_products:
+    - product: Automotive (Cloud Expert)
+      type: Salesforce industry expertise
+      lapsed: false
+    - product: Communications (Cloud Expert)
+      type: Salesforce industry expertise
+      lapsed: false
+    - product: Consumer Goods (Cloud Accredited)
+      type: Salesforce industry expertise
+      lapsed: false
+    - product: Education (Cloud Accredited)
+      type: Salesforce industry expertise
+      lapsed: false
+    - product: Energy and Utilities (Cloud Expert)
+      type: Salesforce industry expertise
+      lapsed: false
+    - product: Engineering, Construction and Real Estate (Cloud Expert)
+      type: Salesforce industry expertise
+      lapsed: false
+    - product: Financial Services (Cloud Expert)
+      type: Salesforce industry expertise
+      lapsed: false
+    - product: Healthcare and Life Sciences (Cloud Expert)
+      type: Salesforce industry expertise
+      lapsed: false
+    - product: High Tech (Cloud Expert)
+      type: Salesforce industry expertise
+      lapsed: false
+    - product: Manufacturing (Cloud Expert)
+      type: Salesforce industry expertise
+      lapsed: false
+    - product: Media (Cloud Accredited)
+      type: Salesforce industry expertise
+      lapsed: false
+    - product: Professional Services (Cloud Accredited)
+      type: Salesforce industry expertise
+      lapsed: false
+    - product: Public Sector and Government (Cloud Accredited)
+      type: Salesforce industry expertise
+      lapsed: false
+    - product: Retail (Cloud Accredited)
+      type: Salesforce industry expertise
+      lapsed: false
+    - product: Travel, Transportation and Hospitality (Cloud Accredited)
+      type: Salesforce industry expertise
+      lapsed: false
+    - product: Agentforce (Cloud Expert)
+      type: Salesforce product expertise
+      lapsed: false
+    - product: Agentforce Commerce (Cloud Expert)
+      type: Salesforce product expertise
+      lapsed: false
+    - product: Agentforce Marketing (Cloud Expert)
+      type: Salesforce product expertise
+      lapsed: false
+    - product: Agentforce Sales (Cloud Expert)
+      type: Salesforce product expertise
+      lapsed: false
+    - product: Agentforce Service (Cloud Expert)
+      type: Salesforce product expertise
+      lapsed: false
+    - product: Analytics (Cloud Expert)
+      type: Salesforce product expertise
+      lapsed: false
+    - product: Data 360 (Cloud Expert)
+      type: Salesforce product expertise
+      lapsed: false
+    - product: Platform (Cloud Expert)
+      type: Salesforce product expertise
+      lapsed: false
+    - product: Slack (Cloud Accredited)
+      type: Salesforce product expertise
+      lapsed: false
+    - product: Small Business (Cloud Expert)
+      type: Salesforce product expertise
+      lapsed: false
+  detected_by: sweep-professional-services.py
+  first_seen: '2026-10-19'
+- partner_name: Snowflake Services Partner Program
+  partner: snowflake
+  partner_match: register
+  type: register
+  channel: standard-directory
+  relationship: standard-participant
+  direction: partner-built
+  evidence: https://www.snowflake.com/en/why-snowflake/partners/all-partners/infosys/
+  category: Services partner
+  contract_reference:
+    register: Snowflake partner directory (filterable_resources.filter.json + partner model.json)
+    spec_file: null
+    standard: Snowflake services partner
+    role: snowflake-services-partner
+    registered_name: Infosys
+    register_id: infosys
+    partner_tier: Elite
+    matched_domain: infosys.com
+    matched_by: domain
+    identity_source: the register's own website / profile URL for the firm (no lookup)
+    signal_note: listing = participation; certified_products = one entry per designation the program awards the
+      FIRM (lapsed flagged); partner_tier and context are never counted (breadth is not credit)
+    detected_by: sweep-professional-services.py
+    detected: '2026-10-19'
+    context:
+      badge: Snowflake AI Data Cloud Elite Services Partner badge
+    certified_products:
+    - product: Healthcare & Life Sciences
+      type: Snowflake competency
+      lapsed: false
+    - product: Retail & Consumer Goods
+      type: Snowflake competency
+      lapsed: false
+    - product: Analytics
+      type: Snowflake workload specialization
+      lapsed: false
+  detected_by: sweep-professional-services.py
+  first_seen: '2026-10-19'
 templates: []
