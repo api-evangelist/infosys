@@ -29,6 +29,7 @@ checked:
 - https://www.applytosupply.digitalmarketplace.service.gov.uk/g-cloud-14/suppliers
 - https://www.crowncommercial.gov.uk/agreements
 - https://www.ncsc.gov.uk/cyberessentials/search
+- backstage/integrations/backstage-integration-edges.yml
 summary: null
 marketplace_apps: []
 edges:
@@ -104,23 +105,6 @@ edges:
   seller_name: Infosys Live Operations
   detected_by: sweep-cloud-marketplaces.py
   detected: '2026-10-13'
-- partner_name: UKG (own)
-  partner: ukg
-  partner_match: mirror
-  mirror_match: domain
-  type: marketplace
-  relationship: platform-app
-  direction: third-party
-  channel: partner-built
-  marketplace: own
-  evidence: https://marketplace.ukg.com/apps/321324/infosys-limited
-  mirror_of: ukg/integrations/ukg-integration-edges.yml
-  apps:
-  - Infosys Limited
-  listing_count: 1
-  detected: '2026-10-14'
-  detected_by: mirror-platform-listings.py
-  category: Languages Supported
 - partner_name: AWS Partner Network (services)
   partner: amazon-web-services
   partner_match: register
@@ -493,4 +477,40 @@ edges:
     detected: '2026-10-21'
   detected_by: sweep-uk-g-cloud-suppliers.py
   first_seen: '2026-10-21'
+- partner_name: UKG (own)
+  partner: ukg
+  partner_match: mirror
+  mirror_match: domain
+  type: marketplace
+  relationship: platform-app
+  direction: third-party
+  channel: partner-built
+  marketplace: own
+  evidence: https://marketplace.ukg.com/apps/321324/infosys-limited
+  mirror_of: ukg/integrations/ukg-integration-edges.yml
+  apps:
+  - Infosys Limited
+  listing_count: 1
+  detected: '2026-10-14'
+  detected_by: mirror-platform-listings.py
+  category: Languages Supported
+- partner_name: Backstage (own)
+  partner: backstage
+  partner_match: mirror
+  mirror_match: domain
+  type: marketplace
+  relationship: platform-app
+  direction: third-party
+  channel: partner-built
+  marketplace: own
+  evidence: https://github.com/backstage/backstage/tree/d72327203d5d0812bee2eace8688fa5ab22867be/microsite/data/plugins/cloud-service-action-hub.yaml
+  mirror_of: backstage/integrations/backstage-integration-edges.yml
+  apps:
+  - Cloud Service ActionHub
+  - Daily Weather
+  - Holiday Tracker
+  listing_count: 1
+  detected: '2026-10-22'
+  detected_by: mirror-platform-listings.py
+  category: Utility
 templates: []

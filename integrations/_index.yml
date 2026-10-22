@@ -53,19 +53,6 @@
   relationship: distribution-channel
   status: not-a-workflow
   arazzo: null
-- slug: infosys-ukg-own
-  label: UKG (own)
-  partner: ukg
-  partner_name: UKG (own)
-  category: Languages Supported
-  type: marketplace
-  marketplace: own
-  channel: partner-built
-  evidence: https://marketplace.ukg.com/apps/321324/infosys-limited
-  source: edge
-  relationship: platform-app
-  status: not-a-workflow
-  arazzo: null
 - slug: infosys-aws-partner-network-services
   label: AWS Partner Network (services)
   partner: amazon-web-services
@@ -441,5 +428,31 @@
       of position shares
     detected_by: sweep-uk-g-cloud-suppliers.py
     detected: '2026-10-21'
+  status: not-a-workflow
+  arazzo: null
+- slug: infosys-ukg-own
+  label: UKG (own)
+  partner: ukg
+  partner_name: UKG (own)
+  category: Languages Supported
+  type: marketplace
+  marketplace: own
+  channel: partner-built
+  evidence: https://marketplace.ukg.com/apps/321324/infosys-limited
+  source: edge
+  relationship: platform-app
+  status: not-a-workflow
+  arazzo: null
+- slug: infosys-backstage-own
+  label: Backstage (own)
+  partner: backstage
+  partner_name: Backstage (own)
+  category: Utility
+  type: marketplace
+  marketplace: own
+  channel: partner-built
+  evidence: https://github.com/backstage/backstage/tree/d72327203d5d0812bee2eace8688fa5ab22867be/microsite/data/plugins/cloud-service-action-hub.yaml
+  source: edge
+  relationship: platform-app
   status: not-a-workflow
   arazzo: null
